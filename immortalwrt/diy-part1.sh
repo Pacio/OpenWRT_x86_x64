@@ -1,4 +1,7 @@
 #!/bin/bash
+#merge patch
+wget https://patch-diff.githubusercontent.com/raw/openwrt/openwrt/pull/21288.patch
+git apply 21288.patch
 
 # Merge_package
 function merge_package(){
